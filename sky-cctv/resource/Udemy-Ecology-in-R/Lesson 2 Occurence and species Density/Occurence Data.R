@@ -2,6 +2,8 @@
 ########## Querying and exploring occurence data #############
 ##############################################################
 
+setwd("C:/GitHub/is-it/sky-cctv/resource/Udemy-Ecology-in-R/Lesson 2 Occurence and species Density")
+
 # Now that we've gone over the basics of R, we will jump right into 
 # a bit more advanced content. You will find that a lot of R programming
 # doesn't necessrily have to do with writing your own fucntions and massive
@@ -12,7 +14,16 @@
 # we will begin by installing and opening necessary packages
 install.packages("rgbif")
 install.packages("mapview")
+
+install.packages(c("qlcMatrix", "fastmatch"))
+install.packages(c("vctrs", "fansi"))
 install.packages("scrubr")
+install.packages("C:/Users/cheun/Downloads/scrubr_0.4.0.tar.gz", repos = NULL, type = "source")
+install_version("scrubr", ">= 0.4.0")
+install.packages("devtools")
+devtools::install_version("scrubr", version = "0.4.0", type="source")
+getOption("pkgType")
+
 install.packages("sp")
 
 #Now we open the packages we installed, and one from the previous lesson
