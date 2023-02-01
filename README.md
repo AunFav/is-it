@@ -1,5 +1,3 @@
-# is it
-
 ## inquiries
 
 this notebook-ish repository will be my temporal mash for different projects, while keeping in mind the word origin of "projection" hints an externalized vision that is inherently sanitizing"what's there" to assign a self-convinced reality
