@@ -164,6 +164,8 @@ spdat.new <- occ_search(taxonKey = key, return = "data",
                         limit = 200, establishmentMeans = "NATIVE")
 spdat.new <- spdat.new$data
 
+rm(spdat.new)
+
 
 # create our new dataframe
 dat.new <- select(spdat.new, decimalLatitude, decimalLongitude, species)

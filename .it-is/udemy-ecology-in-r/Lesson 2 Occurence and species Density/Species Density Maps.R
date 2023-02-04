@@ -2,7 +2,7 @@
 ########## Density estimates of occurence data ###############
 ##############################################################
 
-setwd("")
+setwd("C:/GitHub/is-it/.it-is/udemy-ecology-in-r/Lesson 2 Occurence and species Density")
 
 # For this excersise we will do some simple plotting techniques 
 # to provide densities of Trimeresurus spp. (Green pit vipers)
@@ -12,6 +12,7 @@ setwd("")
 # should prepare you for that
 
 # First we will install some new packages, and open existing ones
+install.r raster usdm GIStools maps RcolorBrewer ggspatial
 
 install.packages("raster")
 install.packages("usdm")
@@ -19,6 +20,17 @@ install.packages("GIStools")
 install.packages("maps")
 install.packages("RcolorBrewer")
 install.packages("ggspatial")
+
+install.packages("pacman")
+install.packages("maptools")
+install.packages("regos")
+
+zipfile <- "C:/Users/cheun/Downloads/rego_1.5.2.zip"
+install.packages(zipfile, repos = NULL, type = "source", lib = "C:/Users/cheun/AppData/Local/R/win-library/4.2")
+
+
+
+pacman::p_load(sp,raster,usdm,mapview,rgbif,scrubr,GISTools,maps,ggplot2,RColorBrewer,ggspatial)
 
 library(sp)
 library(raster)
